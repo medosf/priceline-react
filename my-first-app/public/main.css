@@ -1,0 +1,466 @@
+/*main styling */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+/* nav bar */
+.nav{
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 10px
+    
+
+}
+a{
+    text-decoration: none;
+    color: gray;
+}
+
+
+/*left side*/
+.left-side-nav{
+    display: flex;
+    align-items: baseline;
+    
+  
+    
+}
+.left-side-nav h3{
+    color: rgba(5, 5, 223, 0.925);
+    font-size: 20px;
+    padding-left: 10px; 
+     
+}
+.left-side-nav-ul{
+    display: flex;
+    list-style: none;
+    justify-content: baseline;
+    
+}
+.left-side-nav-ul li{
+   padding-left: 10px; 
+    
+}
+/*right side*/
+.right-side-nav{
+    display: flex;
+    float: right;
+    margin-right: 10px;
+
+    
+}
+.right-side-nav div{
+    margin-left: 10px;
+    
+}
+.right-side-nav h5{
+    color: rgba(5, 5, 223, 0.925);
+}
+.right-side-nav ul{
+    background-color: rgba(128, 128, 128, 0.856);
+    
+}
+.right-side-nav ul li{
+    width: 200px;
+    padding: 5px;
+   }
+.right-side-nav ul li:hover{
+ color: blue;
+
+}
+
+.trip-div{
+    position: relative
+}
+.show-trip{
+    display: none;
+    position: absolute;
+    right: 0;
+    margin-top: -8px; 
+}
+.trip:hover + .show-trip, .show-trip:hover{
+    display: block;
+
+}
+.right-side-nav h5{
+    font-size: 15px;
+}
+
+
+.help-div{
+    position: relative;
+}
+.show-help{
+    position: absolute;
+    right: 0;
+    display: none;
+    margin-top: -8px;
+}
+.help:hover + .show-help, .show-help:hover{
+    display: block;
+}
+
+/*imgbox*/
+#imgbox{
+    background-image: url('https://www.priceline.com/home/public/assets/images/photos/pcln-hp-hero-mountain-lounge.jpg');
+    background-position: center;
+    padding: 40px;
+    
+
+}
+/*box*/
+#box{
+    width: 70%;
+  
+}
+
+/*flight compoinent styling*/
+
+#flight-radio{
+    display: flex;
+    
+}
+#flight-radio > div{
+    margin-left: 10px;
+
+    
+}
+#flight-radio > div > span{
+    margin-left: 5px;
+}
+
+.flight-inputs  input{
+
+    width: 100%;
+    padding: 5px;
+    margin: 5px;
+
+}
+.flight-inputs{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: space-around;
+    padding: 10px;
+
+}
+.flight-inputs input[type=button]{
+    background-color: rgb(30, 144, 255);
+    color: white;
+}
+
+
+.flight-check{
+    display: flex;
+}
+.flight-check > div, .flight-check > p{
+    margin-left: 10px; 
+}
+.flight-check > div > span{
+    margin-left: 5px;
+}
+.flight-check p {
+    margin-left: 20px;
+}
+
+
+@media (max-width: 870px) {
+    #box {
+        width: 100%;
+
+       
+    }
+    #imgbox{
+        padding: 20px 20px;
+    }
+}
+/* bootstrap css starts here */
+.container{
+    background-color:rgb(4, 168, 209); 
+    color:red;
+    height: 6vh;
+    border-bottom: 4px solid rgb(72, 136, 209);
+    margin:0;
+    margin-top:0;
+    /* width: 100px; */
+    
+  }
+  .border-right
+  {
+    height: 6vh;
+  }
+  
+  /* bootstrap css ends here */
+  
+  /* Header CSS starts here */
+  .Header
+  {
+    display: flex;
+    background-color: rgb(32, 142, 185);
+  }
+  .Header-LeftSide
+  {
+    margin-left: 20px;
+    /* background-color: navy; */
+    color: white;
+    padding:10px;
+    
+  }
+  .Vline
+  {
+    border-right: 1px solid white;
+    margin-left: 24px;
+  }
+  .Header-RightSide
+  {
+    margin-left: 30px;
+    /* background-color: orchid; */
+    color: white;
+    padding: 10px;
+  }
+  /* Header CSS ends here */
+  
+  
+  /* Main-box css starts here */
+  
+  .Main-box
+  {
+    background-color: white;
+    width:50%;
+    margin-left:120px;
+    padding: 10px;
+    margin-top: 50px;
+    border: 1px solid gray;
+    border-radius: 5px;
+  }
+  h2
+  {
+      font-weight: bold;
+  }
+  .Main-box-bottom-border
+  {
+    border-bottom: 1px solid gray;
+    margin-top:10px;
+  }
+  .Main-box-link
+  {
+    /* padding: 5px; */
+    width:100%;
+    
+  }
+  .Main-box-link ul
+  {
+    display: flex;
+    list-style: none;
+    margin-top: 5px;
+    padding-left:0px;
+    /* padding:10px; */
+    ;
+  }
+  .Main-box-link li 
+  {
+    text-decoration: none;
+    padding-left: 8%;
+  }
+  
+  .Main-box-link-bottom-border
+  { 
+    border-bottom: 1px solid blue;
+    width:47vw;
+    margin-top:0px;
+  }
+  /* .search
+  {
+    display: flex;
+   
+  }  */
+  .input-icons i
+  {
+    position: absolute;
+    color: blue;
+  }
+  .icon
+  {
+    padding:1.3%;
+    min-width:40px;
+  }
+  .input-field
+  {
+    width: 90%;
+    margin-left: 20px;
+    height: 7vh;
+   
+  }
+  .input-icons
+  {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  
+  
+   /* .search input
+  {
+    height: 7vh;
+    width:47vw;
+    margin-top: 20px;
+     
+  } */
+  .Main-box-multibox 
+  {
+    display: flex;
+    width:50%;
+   
+  }
+  
+  .Main-box-multibox-calender img
+  {
+    height:3vh;
+  }
+  .Main-box-multibox-calender input
+  {
+    flex:1;
+    width:33vw;
+    width:15vw;
+    height: 7vh;
+  }
+  .Main-box-multibox > div
+  {
+    margin-top: 20px;
+    /* padding:30px; */
+    justify-content: space-around;
+  }
+  
+  .Main-box-multibox-dropdown select
+  {
+    flex:1;
+    width:33vw;
+    margin-left: 15px;
+    width:15vw;
+    height: 7vh;
+  }
+  .Main-box-multibox-btn button
+  {
+    flex:1;
+    margin-left: 15px;
+    background-color:rgb(12, 140, 214);
+    width:15vw;
+    height: 7vh;
+    color: white;
+  }
+  
+  
+  .Main-box-multibox-last
+  {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    width:50%;
+  }
+  /* Main-box css ends here */
+  
+  
+  
+  /* BundleSave component css starts */
+  .BSAVE
+  {
+    margin-left: 30px;
+    
+    
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  .BSAVE >div
+  {
+    margin-top: 10px;
+  }
+  .BS_Header
+  {
+    /* background-color: blueviolet; */
+    width:100%;
+    background-color: lightgray;
+    /* padding-left: 10px; */
+    
+  }
+  .BS_Header_Para
+  {
+    border-bottom: 1px solid gray;
+  }
+  .BS_Header_link 
+  {
+    padding-left: 60px;
+    height: 6vh;
+  }
+  
+  /* BS_Middle css starts here */
+  .BS_Middle
+  {
+    width: 100%;
+    /* margin: 10 10 10 10; */
+    
+  }
+  .BS_Middle_RB Form
+  {
+    display: flex;
+    width:120%;
+    justify-content:space-between;
+  }
+  .BS_Middle_WF
+  {
+    width:100%;
+    
+  }
+ #formVerticalRadios1,#formVerticalRadios2,#formVerticalRadios3,#formVerticalRadios4
+ {
+   /* width:20vw; */
+ }
+ 
+ #btn
+ {
+  width:20vw;
+  margin-left: 250px;
+  background-color: white;
+  color:rgb(102, 172, 205);
+  border: none;
+ }
+  #formGridEmail,#formGridPassword
+  {
+    width:30vw;
+  }
+  #formGridCity,#formGridState,#formGridState
+  {
+    width:25vw;
+    
+  }
+  .BS_Middle_WF Form
+  {
+    padding-left: 10px;
+  }
+  .BS_Middle_Last
+  {
+    margin-top: 10px;
+    width:100%;
+  }
+  
+  /* BS_Middle css endss here */
+  
+  
+  /* BundleSave component Footer css Starts*/
+  .BS_Footer
+  {
+    margin-top: 10px;
+    width:100%;
+    background-color: lightgray;
+    text-align: center;
+    height: 8vh;
+    padding: 10px;
+    border-top:  1px solid grey;
+  
+  }
+  
+  /* BundleSave component Footer css Ends*/
+  /* BundleSave component css ends */
